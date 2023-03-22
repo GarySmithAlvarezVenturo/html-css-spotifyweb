@@ -6,6 +6,7 @@
 
 body{
     color: white;
+    font-family: 'Gotham', sans-serif;
 }
 
 .big-container{
@@ -66,6 +67,30 @@ body{
     height: calc(100vh - 90px) ;
     background-color: #141922;
     padding-top: 90px;
+}
+
+nav{
+    height: 50px;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav .nav-top{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .nav-top a {
+    display: flex;
+    align-items: center;
+    padding-inline: 1em;
+    text-decoration: none;
+    color: rgba(192, 190, 190, 0.445);
+
 }
 
 /* NAV BOT */
