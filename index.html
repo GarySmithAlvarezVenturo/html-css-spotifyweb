@@ -4,39 +4,228 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- FONT FAMILY -->
     <link href="https://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
+    <!-- STYLE -->
     <link rel="stylesheet" href="assets/style.css">
     <title>Spotify</title>
 </head>
 <body>
-    <main>
+    <main class="app">
 
-        <div class="big-container">
-            <div class="left-container"></div>
-            <div class="top-container">
-                <div class="btn-top">
-                    <button class="btn-upgrade">EFFETTUTA L'UPGRADE</button>
+      <!-- MAIN WINDOW -->
+      <section class="main-window">
+
+        <!-- NAVBAR LEFT -->
+        <aside class="navbar-left">
+          <div class="navbar-left-menu">
+
+            <a href="#">
+              <img class="navbar-logo desktop" src="img/logo.svg" alt="">
+            </a>
+
+            <a href="#">
+              <img class="navbar-logo mobile" src="img/logo-small.svg" alt="">
+            </a>
+
+            <ul class="v-list nav">
+                
+              <li class="active">
+                <a href="#">
+                  <img src="img/home.svg" alt="">
+                  <span>Home</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <img src="img/search.svg" alt="">
+                  <span>Cerca</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/libreria.svg" alt="">
+                  <span>La tua libreria</span>
+                </a>
+              </li>
+            </ul>
+            <h5>Playlist</h5>
+            <ul class="v-list playlist">
+              <li>
+                <i class="fas fa-plus"></i>
+                <a href="#">
+                  Crea Playlist
+                </a>
+              </li>
+              <li>
+                <a href="#"> Nome Playlist </a>
+              </li>
+              <li>
+                <a href="#"> Nome Playlist </a>
+              </li>
+              <li>
+                <a href="#"> Nome Playlist </a>
+              </li>
+              <li>
+                <a href="#"> Nome Playlist </a>
+              </li>
+              <li>
+                <a href="#"> Nome Playlist </a>
+              </li>
+              <li>
+                <a href="#"> Nome Playlist </a>
+              </li>
+              <li>
+                <a href="#"> Nome Playlist </a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-left-user">
+            <div class="install">
+              <a href="#">
+                <i class="far fa-arrow-alt-circle-down"></i>
+                <span>Installa app</span>
+              </a>
+            </div>
+            <div class="user">
+              <a class="vertical-center" href="#">
+                <img src="img/profile.svg" alt="">
+                <h6>John Wick</h6>
+              </a>
+            </div>
+          </div>
+        </aside>
+        <!-- BAR TOP NAV -->
+        <div class="scrollable-container">
+          <div class="scrollable-header">
+            <a href="#" class="btn btn-outline">EFFETTUA L'UPGRADE</a>
+          </div>
+          <!-- ALBUM CONTENT -->
+          <div class="scrollable-content">
+            <nav class="music-navbar">
+              <ul class="h-list center">
+                <li>
+                  <a class="active" href="#">IN EVIDENZA</a>
+                </li>
+                <li>
+                  <a href="#">PODCAST</a>
+                </li>
+                <li>
+                  <a href="#">CLASSIFICHE</a>
+                </li>
+                <li>
+                  <a href="#">GENERI E MOOD</a>
+                </li>
+                <li>
+                  <a href="#">NUOVE USCITE</a>
+                </li>
+                <li>
+                  <a href="#">SCOPRI</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="albums-container">
+              <h2 id="new-title">Recently played</h2>
+              <div class="albums-row">
+                <div class="albums-item txt-center">
+                  <div class="img-album">
+                    <img class="img-responsive" src="img/metal_lifting.jpg" alt="">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                  <h4>Heavy Metal</h4>
+                  <p>Subtitle</p>
                 </div>
+                <div class="albums-item txt-center">
+                  <div class="img-album">
+                    <img class="img-responsive" src="img/stranger.jpeg" alt="">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                  <h4>Stranger Things,Vol.1(a Netflix Original Series Soundtrack)</h4>
+                  <p>Kylie Dixon & Micheal Stein</p>
+                </div>
+                <div class="albums-item txt-center">
+                  <div class="img-album">
+                    <img class="img-responsive" src="img/aquietplace.jpeg" alt="">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                  <h4>A quiet place</h4>
+                  <p>Subtitle</p>
+                </div>
+                <div class="albums-item txt-center">
+                  <div class="img-album">
+                    <img class="img-responsive" src="img/split.jpeg" alt="">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                  <h4>Split</h4>
+                  <p>Subtitle</p>
+                </div>
+                <div class="albums-item txt-center">
+                  <div class="img-album">
+                    <img class="img-responsive" src="img/cure.jpeg" alt="">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                  <h4>A cure for wellness</h4>
+                  <p>Subtitle</p>
+                </div>
+                <div class="albums-item txt-center">
+                  <div class="img-album">
+                    <img class="img-responsive" src="img/sinister.jpeg" alt="">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                  <h4>Sinister</h4>
+                  <p>Subtitle</p>
+                </div>
+              </div>
             </div>
-            <div class="middle-container">
-                <nav>
-                    <ul class="nav-top">
-                        <li><a href="#">IN EVIDENZA</a></li>
-                        <li><a href="#">PODCAST</a></li>
-                        <li><a href="#">CLASSIFICHE</a></li>
-                        <li><a href="#">GENERI E MOOD</a></li>
-                        <li><a href="#">NUOVE USCITE</a></li>
-                        <li><a href="#">SCOPRI</a></li>
-                    </ul>
-                </nav>
+            <div class="albums-container">
+              <h2>Creato per Jhon Doe</h2>
+              <p>Piú ascolti, piú accurati saranno i suggerimenti.</p>
+              <div class="albums-row">
+                <div class="albums-item txt-center">
+                  <div class="img-album">
+                    <img class="img-responsive" src="img/radar.jpeg" alt="">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                  <h4>Release Radar</h4>
+                </div>
+                <div class="albums-item txt-center">
+                  <div class="img-album">
+                    <img class="img-responsive" src="img/mixdaily.jpeg" alt="">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                  <h4>Daily Mix 1</h4>
+                </div>
+              </div>
             </div>
-        </div>
-        
-        <div class="bottom-container"></div>
+            <div class="albums-container">
+              <h2>Artisti piú popolari</h2>
+              <p>Piú ascolti, piú accurati saranno i suggerimenti</p>
+              <div class="albums-row">
+                <div class="albums-item rounded txt-center">
+                  <div class="img-album">
+                    <img class="img-responsive" src="img/youg.jpeg" alt="">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                  <h4>Ariana Grande</h4>
+                </div>
+                <div class="albums-item rounded txt-center">
+                  <div class="img-album">
+                    <img class="img-responsive" src="img/einaudi.jpeg" alt="">
+                    <i class="far fa-play-circle"></i>
+                  </div>
+                  <h4>Einaudi</h4>
+                </div>
+              </div>
+            </div>
+          </div>
 
+        </div>
+      </section>
+    
     </main>
 
-   
- 
 </body>
 </html>
